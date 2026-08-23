@@ -23,7 +23,7 @@ body {
     background-color: #FFFFFF;
 }
 
-.gradient{
+.gradient {
     background: linear-gradient(to bottom, #C084FC, #FFFFFF);
 }
 
@@ -85,6 +85,7 @@ h3 {
 
 hr {
     margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 #fisica {
@@ -123,14 +124,14 @@ p {
 }
 
 .feminicidio {
-    display: flex ;
+    display: flex;
     padding: 10px;
     flex-direction: column;
     align-items: center;
 }
 
 .feminicidio img {
-    width: 60%;
+    width: 80%;
     padding: 10px;
     margin-top: 20px;
 }
@@ -354,8 +355,6 @@ p {
     object-fit: cover;
 }
 
-
-/* Se você quiser mudar todos os SVGs dentro do seu botão */
 .bi-arrow-left-circle-fill,
 .bi-arrow-right-circle-fill {
     color: #7b52ab;
@@ -375,4 +374,134 @@ p {
 
 .bi-arrow-right-circle-fill {
     margin-left: 440px;
+}
+
+
+/* Responsividade */
+@media(max-width: 375px) {
+
+    #btn-anterior,
+    #btn-proximo,
+    .bi-arrow-left-circle-fill,
+    .bi-arrow-right-circle-fill {
+        display: none !important;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 32px;
+        text-align: center;
+        margin: 0 10px;
+        width: auto;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 340px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .violencias {
+        grid-template-columns: 1fr;
+    }
+
+    .container-principal {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .col-esquerda {
+        width: 75%;
+    }
+
+    .col-esquerda p {
+        margin-bottom: 10px;
+    }
+
+    .icone-check {
+        margin-left: 0px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .lista-acoes {
+        margin-left: 10px;
+        padding: 0px;
+        width: 400px;
+    }
+
+    .lista-acoes li {
+        align-items: left;
+    }
+
+    .lista-acoes span {
+        font-size: 17px;
+    }
+
+    .grid-content,
+    .card-link,
+    .card-video {
+        width: 100%;
+        max-width: 390px;
+        height: 220px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-content img,
+    .card-link img,
+    .card-video img {
+        width: 100%;
+        height: auto;
+    }
+
+    .painel-conteudos {
+        align-items: center;
+    }
+
+
+    .card-text span {
+        font-size: 28px;
+    }
+
+    .cta {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .banner {
+        height: 220px;
+        
+    }
+
+    .flor {
+        left: -10px;
+        top: 100px;
+    }
+
+    .hug {
+        height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+        
+    }
 }

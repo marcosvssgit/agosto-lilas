@@ -9,6 +9,7 @@ cardsFlip.forEach(card => {
 
 // SLIDESHOW
 
+const sliderContainer = document.getElementById("slider-cards");
 const cards = document.querySelectorAll(".card-content");
 
 const btnAnterior = document.getElementById("btn-anterior");
@@ -24,7 +25,6 @@ function trocarCard(novoIndice, direcao) {
 
     // Impede outro clique durante a animação
     if (animando) return;
-
     animando = true;
 
     const cardAtual = cards[indiceAtual];
@@ -93,64 +93,81 @@ function trocarCard(novoIndice, direcao) {
 }
 
 
-// PRÓXIMO
-
+// BOTÕES (PRÓXIMO / ANTERIOR)
 btnProximo.addEventListener("click", () => {
-
     let novoIndice = indiceAtual + 1;
-
-    if (novoIndice >= cards.length) {
-        novoIndice = 0;
-    }
-
+    if (novoIndice >= cards.length) novoIndice = 0;
     trocarCard(novoIndice, "direita");
 });
 
-
-// ANTERIOR
-
 btnAnterior.addEventListener("click", () => {
-
     let novoIndice = indiceAtual - 1;
-
-    if (novoIndice < 0) {
-        novoIndice = cards.length - 1;
-    }
-
+    if (novoIndice < 0) novoIndice = cards.length - 1;
     trocarCard(novoIndice, "esquerda");
 });
+
+// CONTROLE POR TOQUE (SWIPE) NO CELULAR
+let toqueInicioX = 0;
+let toqueFimX = 0;
+
+sliderContainer.addEventListener("touchstart", (e) => {
+    toqueInicioX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+sliderContainer.addEventListener("touchend", (e) => {
+    toqueFimX = e.changedTouches[0].screenX;
+    tratarSwipe();
+}, { passive: true });
+
+function tratarSwipe() {
+    const distanciaMinima = 50;
+
+    // Arrastou para a esquerda (Avançar)
+    if (toqueInicioX - toqueFimX > distanciaMinima) {
+        let novoIndice = indiceAtual + 1;
+        if (novoIndice >= cards.length) novoIndice = 0;
+        trocarCard(novoIndice, "direita");
+    }
+
+    // Arrastou para a direita (Voltar)
+    if (toqueFimX - toqueInicioX > distanciaMinima) {
+        let novoIndice = indiceAtual - 1;
+        if (novoIndice < 0) novoIndice = cards.length - 1;
+        trocarCard(novoIndice, "esquerda");
+    }
+}
 
 //SITE MARIA DA PENHA
 const card2 = document.getElementById('maria-da-penha');
 
-card2.addEventListener('click', function() {
+card2.addEventListener('click', function () {
     window.open('https://www.institutomariadapenha.org.br/quem-e-maria-da-penha.html', '_blank');
 });
 
 //VIDEO CICLO DA VIOLÊNCIA
 const videoCard3 = document.getElementById('ciclo-da-violencia');
 
-videoCard3.addEventListener('click', function() {
+videoCard3.addEventListener('click', function () {
     window.open('https://www.youtube.com/watch?v=BNo3cy9uW_4', '_blank');
 });
 
 //VIDEO JORNAL DA CIDADE
 const videoCard4 = document.getElementById('jornal-da-cidade');
 
-videoCard4.addEventListener('click', function() {
+videoCard4.addEventListener('click', function () {
     window.open('https://www.youtube.com/watch?v=c5mUGG_0A6E', '_blank');
 });
 
 //VIDEO SOBRE A LEI MARIA DA PENHA
 const videoCard5 = document.getElementById('video-mp');
 
-videoCard5.addEventListener('click', function() {
+videoCard5.addEventListener('click', function () {
     window.open('https://www.youtube.com/watch?v=gOvY5MzY60E', '_blank');
 });
 
 //VIDEO VIOLÊNCIA DOMÉSTICA
 const videoCard6 = document.getElementById('violencia-domestica');
 
-videoCard6.addEventListener('click', function() {
+videoCard6.addEventListener('click', function () {
     window.open('https://www.youtube.com/watch?v=9p9D1wY1yAU', '_blank');
 });
