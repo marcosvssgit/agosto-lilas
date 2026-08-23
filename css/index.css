@@ -23,6 +23,10 @@ body {
     margin: 0;
 }
 
+.dica-mobile {
+    display: none;
+}
+
 .conteiner-pagina {
     max-width: 1600px;
     margin: 0 auto;
@@ -415,6 +419,14 @@ p {
     .container-principal {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .dica-mobile {
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        color: #666;
+        margin-top: 10px;
     }
 
     .col-esquerda {
