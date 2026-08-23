@@ -54,7 +54,7 @@ body {
     position: absolute;
     left: 1.5%;
     top: 50%;
-    width: 60%;
+    width: 70%;
     margin: 0;
     padding: 0;
     font-family: 'MeriendaTitle', sans-serif;
@@ -158,9 +158,11 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    width: 100%;
     max-width: 1400px;
     margin: auto;
     padding: 0 24px;
+    box-sizing: border-box;
 }
 
 .violencias .toknow {
@@ -174,7 +176,8 @@ p {
 }
 
 .card {
-    width: 460px;
+    width: 100%;
+    max-width: 100%;
     height: 264px;
     perspective: 1000px;
     cursor: pointer;
@@ -295,9 +298,12 @@ p {
 .container-principal {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 20px;
-    margin: 10px auto;
-    padding: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .grid-content {
@@ -355,11 +361,24 @@ p {
     object-fit: cover;
 }
 
+.carrossel-controller {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+    gap: 170px;
+    width: 100%;
+}
+
 .bi-arrow-left-circle-fill,
 .bi-arrow-right-circle-fill {
     color: #7b52ab;
     cursor: pointer;
     transition: transform 0.3s ease;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
 }
 
 .bi-arrow-left-circle-fill:hover,
@@ -368,17 +387,9 @@ p {
     transition: transform 0.3s ease-in-out;
 }
 
-.bi-arrow-left-circle-fill {
-    margin-left: 950px;
-}
-
-.bi-arrow-right-circle-fill {
-    margin-left: 440px;
-}
-
 
 /* Responsividade */
-@media(max-width: 375px) {
+@media(max-width: 1024px) {
 
     #btn-anterior,
     #btn-proximo,
@@ -416,7 +427,11 @@ p {
     }
 
     .violencias {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 960px;
     }
 
     .container-principal {
@@ -425,7 +440,7 @@ p {
     }
 
     .col-esquerda {
-        width: 75%;
+        width: 100%;
     }
 
     .col-esquerda p {
@@ -441,7 +456,7 @@ p {
     .lista-acoes {
         margin-left: 10px;
         padding: 0px;
-        width: 400px;
+        width: 100%;
     }
 
     .lista-acoes li {
@@ -449,7 +464,7 @@ p {
     }
 
     .lista-acoes span {
-        font-size: 17px;
+        font-size: 24px;
     }
 
     .grid-content,
@@ -473,6 +488,7 @@ p {
 
     .painel-conteudos {
         align-items: center;
+        margin-bottom: 20px;
     }
 
 
@@ -488,7 +504,7 @@ p {
 
     .banner {
         height: 220px;
-        
+        margin-top: 10px;
     }
 
     .flor {
@@ -497,11 +513,31 @@ p {
     }
 
     .hug {
+        height: 100%;
+    }
+
+    .banner h1 {
+        font-size: 44px;
+    }
+    
+}
+
+@media(max-width: 554px) {
+    .violencias {
+        grid-template-columns: 1fr;
+
+    }
+
+    .lista-acoes span {
+        font-size: 17px;
+    }
+
+    .hug {
         height: 200px;
     }
 
     .banner h1 {
-        font-size: 20px;
+        font-size: 30px;
         
     }
 }
