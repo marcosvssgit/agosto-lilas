@@ -6,21 +6,31 @@
 }
 
 @font-face {
-    font-family: 'ArchivoText';
-    src: url('../fonts/Archivo-Regular.ttf') format('truetype');
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
-    font-size: normal;
+    font-style: normal;
 }
 
 html {
     background-color: #b292b9;
-    zoom: 75%;
+    zoom: 95%;
 }
 
 body {
+    background-color: #b292b9;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.conteiner-pagina {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .gradient {
@@ -77,7 +87,7 @@ h1,
 h2,
 h3 {
     color: rgb(148, 76, 187);
-    font-family: 'MeriendaTitle', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-size: 44px;
     margin-left: 20px;
     padding: 10px;
@@ -113,14 +123,14 @@ hr {
 }
 
 p {
-    font-family: 'ArchivoText', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-size: 30px;
     margin-left: 30px;
     margin-right: 30px;
 }
 
 .icone-check {
-    margin-left: 50px;
+    margin-left: 25px;
 }
 
 .feminicidio {
@@ -131,12 +141,19 @@ p {
 }
 
 .feminicidio img {
-    width: 80%;
+    width: 60%;
     padding: 10px;
     margin-top: 20px;
 }
 
-/* Organiza o espaço de cada linha da lista */
+.col-esquerda h2 {
+    text-align: center;
+}
+
+.painel-conteudos h3 {
+    text-align: center;
+}
+
 .lista-acoes li {
     display: flex;
     align-items: center;
@@ -146,7 +163,7 @@ p {
 }
 
 .acoes {
-    font-family: 'ArchivoText', sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-size: 28px;
 }
 
@@ -163,6 +180,7 @@ p {
     margin: auto;
     padding: 0 24px;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 .violencias .toknow {
@@ -171,14 +189,17 @@ p {
     display: block;
     font-size: 14px;
     text-align: center;
-    padding: 0px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
     margin-top: auto;
 }
 
 .card {
     width: 100%;
     max-width: 100%;
-    height: 264px;
+    height: 320px;
     perspective: 1000px;
     cursor: pointer;
     transition: transform 0.4s ease;
@@ -213,14 +234,15 @@ p {
 .card-front {
     padding: 14px 20px;
     box-sizing: border-box;
-    font-family: 'ArchivoText', sans-serif;
+    font-family: 'Lexend', sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     height: 100%;
 }
 
 .card-front h2 {
-    font-family: 'MeriendaTitle', sans-serif;
+    font-family: 'Lexend', sans-serif;
     color: #000000;
     font-size: 26px;
     text-align: center;
@@ -286,8 +308,8 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
     background-color: #7b52ab;
     color: #ffffff;
     border-radius: 50%;
@@ -300,8 +322,7 @@ p {
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
+    width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
 }
@@ -361,13 +382,14 @@ p {
     object-fit: cover;
 }
 
-.carrossel-controller {
+.carrossel-wrapper {
     display: flex;
-    justify-content: center; 
+    flex-direction: row;
     align-items: center;
-    margin-top: 20px;
-    gap: 170px;
+    justify-content: center;
+    gap: 40px;
     width: 100%;
+    margin-top: 20px;
 }
 
 .bi-arrow-left-circle-fill,
@@ -389,51 +411,7 @@ p {
 
 
 /* Responsividade */
-@media(max-width: 1024px) {
-
-    #btn-anterior,
-    #btn-proximo,
-    .bi-arrow-left-circle-fill,
-    .bi-arrow-right-circle-fill {
-        display: none !important;
-    }
-
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    h1,
-    h2,
-    h3 {
-        font-size: 32px;
-        text-align: center;
-        margin: 0 10px;
-        width: auto;
-    }
-
-    p {
-        font-size: 28px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 340px;
-        height: 280px;
-        margin: 0 auto;
-    }
-
-    .violencias {
-        grid-template-columns: repeat(2, 1fr);
-        gap:20px;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 960px;
-    }
-
+@media(max-width: 1294px) {
     .container-principal {
         display: grid;
         grid-template-columns: 1fr;
@@ -442,6 +420,8 @@ p {
     .col-esquerda {
         width: 100%;
     }
+
+
 
     .col-esquerda p {
         margin-bottom: 10px;
@@ -519,10 +499,56 @@ p {
     .banner h1 {
         font-size: 44px;
     }
-    
 }
 
-@media(max-width: 554px) {
+@media(max-width: 1134px) {
+
+    #btn-anterior,
+    #btn-proximo,
+    .bi-arrow-left-circle-fill,
+    .bi-arrow-right-circle-fill {
+        display: none !important;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 32px;
+        text-align: center;
+        margin: 0 10px;
+        width: auto;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 380px;
+        height: 320px;
+        margin: 0 auto;
+    }
+
+    .violencias {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 960px;
+    }
+
+}
+
+@media(max-width: 784px) {
     .violencias {
         grid-template-columns: 1fr;
 
@@ -538,6 +564,6 @@ p {
 
     .banner h1 {
         font-size: 30px;
-        
+
     }
 }
