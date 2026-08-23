@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campanha Agosto Lilás</title>
+    <title>Agosto Lilás</title>
     <link href="./css/index.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./laco.png">
 </head>
 
 <body>
@@ -17,8 +18,8 @@
         <h1> O que é Agosto Lilás?</h1>
         <p>O Agosto Lilás é uma campanha nacional de conscientização criada para prevenir e combater a violência
             doméstica e familiar contra a mulher. O mês foi escolhido em referência ao aniversário da Lei Maria da Penha
-            (Lei nº 11.340/2006), que foi sancionada em 7 de agosto de 2006.<br>
-            A Lei Maria da Penha (Lei nº 11.340/2006) é o principal marco legal do Brasil para coibir e prevenir a
+            (Lei nº 11.340/2006), que foi sancionada em 7 de agosto de 2006.</p>
+        <p>A Lei Maria da Penha (Lei nº 11.340/2006) é o principal marco legal do Brasil para coibir e prevenir a
             violência doméstica e familiar contra a mulher. Ela transformou a segurança pública ao definir que a
             agressão no lar não é um assunto particular, mas sim um crime grave contra os direitos humanos.</p>
     </header>
@@ -30,7 +31,7 @@
             <div class="card">
                 <div class="card-inner">
 
-                    <div class="card-front">
+                    <div class="card-front" id="fisica">
                         <h2>Física</h2>
                         <span>
                             - Tortura;<br>
@@ -55,7 +56,7 @@
             <div class="card">
                 <div class="card-inner">
 
-                    <div class="card-front">
+                    <div class="card-front" id="psicologica">
                         <h2>Psicológica</h2>
                         <span>
                             - Chantagem e perseguição;<br>
@@ -79,7 +80,7 @@
             <div class="card">
                 <div class="card-inner">
 
-                    <div class="card-front">
+                    <div class="card-front" id="sexual">
                         <h2>Sexual</h2>
                         <span>
                             - Assédio e exploração sexual;<br>
@@ -102,7 +103,7 @@
             <div class="card">
                 <div class="card-inner">
 
-                    <div class="card-front">
+                    <div class="card-front" id="patrimonial">
                         <h2>Patrimonial</h2>
                         <span>
                             - Subtração de dinheiro ou bens;<br>
@@ -124,7 +125,7 @@
             <div class="card">
                 <div class="card-inner">
 
-                    <div class="card-front">
+                    <div class="card-front" id="moral">
                         <h2>Moral</h2>
                         <span>
                             - Injúria: Ofender a dignidade ou o decoro;<br>
@@ -146,7 +147,7 @@
             <div class="card">
                 <div class="card-inner">
 
-                    <div class="card-front">
+                    <div class="card-front" id="vicaria">
                         <h2>Vicária</h2>
                         <span>
                             - Afastar ou alienar os filhos da mãe;<br>
@@ -164,54 +165,143 @@
 
                 </div>
             </div>
-            
-        </section>
-        <section class="feminicidio">
-            <p>Dados atualizados, publicados em julho de 2026 pelo <strong>Fórum Brasileiro de Segurança
-                    Pública</strong>, informam que houve um aumento nos casos de feminicídio em relação ao ano anterior.
-            </p>
-            <img src="./img/feminicidio.png"
-                alt="Infográfico: 1.571 vítimas de feminicídio, representando um aumento de 4% em relação ao ano anterior. 96,4% dos casos com autoria identificada foram cometidos por homens.">
-        </section>
-        <section class="como-colaborar"> <!-- Aqui vamos colocar vídeos e conteúdos relacionados ao tema -->
-            <div class="col-esquerda">
-                <h2>O que você pode fazer?</h2>
-                <p>A mudança começa com cada um de nós. Pequenas atitudes<br> ajudam a combater a cultura da violência e
-                    a
-                    apoiar quem precisa.</p><br>
 
-                <ul class="lista-acoes">
-                    <li>
-                        <span class="icone-check">✓</span>
-                        <span class="acoes">Acredite e apoie quem relata violência.</span>
-                    </li>
-                    <li>
-                        <span class="icone-check">✓</span>
-                        <span class="acoes">Não minimize comentários ou comportamentos abusivos.</span>
-                    </li>
-                    <li>
-                        <span class="icone-check">✓</span>
-                        <span class="acoes">Compartilhe informações sobre canais de ajuda.</span>
-                    </li>
-                    <li>
-                        <span class="icone-check">✓</span>
-                        <span class="acoes">Denuncie situações de risco às autoridades.</span>
-                    </li>
-                    <li>
-                        <span class="icone-check">✓</span>
-                        <span class="acoes">Respeite a autonomia da mulher em buscar ajuda.</span>
-                    </li>
-                </ul>
-            </div>
         </section>
+        <hr>
+        <div class="gradient">
+            <section class="feminicidio">
+                <p>Dados atualizados, publicados em julho de 2026 pelo <a
+                        href="https://forumseguranca.org.br/wp-content/uploads/2026/07/anuario-2026.pdf"
+                        target="_blank"><strong>Fórum Brasileiro de Segurança Pública</strong></a>, informam que houve
+                    um aumento nos casos de feminicídio em relação ao ano anterior.
+                </p>
+                <img src="./img/feminicidio.png"
+                    alt="Infográfico: 1.571 vítimas de feminicídio, representando um aumento de 4% em relação ao ano anterior. 96,4% dos casos com autoria identificada foram cometidos por homens.">
+            </section>
+            <div class="container-principal">
+                <section class="contents">
+                    <div class="col-esquerda">
+                        <h2>O que você pode fazer?</h2>
+                        <p>A mudança começa com cada um de nós. Pequenas atitudes<br> ajudam a combater a cultura da
+                            violência e
+                            a
+                            apoiar quem precisa.</p><br>
+
+                        <ul class="lista-acoes">
+                            <li>
+                                <span class="icone-check">✓</span>
+                                <span class="acoes">Acredite e apoie quem relata violência.</span>
+                            </li>
+                            <li>
+                                <span class="icone-check">✓</span>
+                                <span class="acoes">Não minimize comentários ou comportamentos abusivos.</span>
+                            </li>
+                            <li>
+                                <span class="icone-check">✓</span>
+                                <span class="acoes">Compartilhe informações sobre canais de ajuda.</span>
+                            </li>
+                            <li>
+                                <span class="icone-check">✓</span>
+                                <span class="acoes">Denuncie situações de risco às autoridades.</span>
+                            </li>
+                            <li>
+                                <span class="icone-check">✓</span>
+                                <span class="acoes">Respeite a autonomia da mulher em buscar ajuda.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="painel-conteudos">
+                    <h3>Conteúdos de Apoio</h3>
+
+                    <div class="grid-content" id="slider-cards">
+
+                        <!-- CARD 1: Frase Motivacional (Link para página de frases) -->
+                        <div class="card-content ativo">
+                            <div class="card-text">
+                                <span>Nenhuma mulher deveria viver com medo. Juntos, podemos construir um mundo
+                                    onderespeito
+                                    e dignidade sejam a norma.
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2: Link para o site falando sobre a história de Maria da Penha -->
+                        <div class="card-content">
+                            <a href="https://www.institutomariadapenha.org.br/quem-e-maria-da-penha.html"
+                                target="_blank" rel="noopener noreferrer"></a>
+                            <div class="card-link">
+                                <img src="./img/contents/maria-da-penha.png" id="maria-da-penha"
+                                    title="Clique para acessar a página!">
+                            </div>
+                        </div>
+
+                        <!-- CARD 3: Vídeo sobre o Ciclo da Violência -->
+                        <div class="card-content">
+                            <a href="https://www.youtube.com/watch?v=BNo3cy9uW_4" target="_blank"
+                                rel="noopener noreferrer"></a>
+                            <div class="card-video">
+                                <img src="./img/contents/ciclo-da-violencia.png" id="ciclo-da-violencia"
+                                    title="CICLO DE VIOLÊNCIA | Plataforma Mulher Segura. Clique para assistir o vídeo!">
+                            </div>
+                        </div>
+
+                        <!-- CARD 4: Vídeo sobre o Ciclo da Violência -->
+                        <div class="card-content">
+                            <a href="https://www.youtube.com/watch?v=c5mUGG_0A6E" target="_blank"
+                                rel="noopener noreferrer"></a>
+                            <div class="card-video">
+                                <img src="./img/contents/jornal-da-cidade.png" id="jornal-da-cidade"
+                                    title="História de superação da violência contra a mulher. Clique para assistir o vídeo!">
+                            </div>
+                        </div>
+
+                        <!-- CARD 5: Vídeo sobre o Ciclo da Violência -->
+                        <div class="card-content">
+                            <a href="https://www.youtube.com/watch?v=gOvY5MzY60E" target="_blank"
+                                rel="noopener noreferrer"></a>
+                            <div class="card-video">
+                                <img src="./img/contents/video-mp.png" id="video-mp"
+                                    title="Proteger as mulheres é um compromisso de toda a sociedade. Clique para assistir o vídeo!">
+                            </div>
+                        </div>
+
+                        <!-- CARD 6: Vídeo sobre o Ciclo da Violência -->
+                        <div class="card-content">
+                            <a href="https://www.youtube.com/watch?v=9p9D1wY1yAU" target="_blank"
+                                rel="noopener noreferrer"></a>
+                            <div class="card-video">
+                                <img src="./img/contents/violencia-domestica.png" id="violencia-domestica"
+                                    title="O relato de uma vítima da violência doméstica: 'Eu me achava culpada' Clique para assistir o vídeo!">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <div class="carrossel-controller">
+                <!-- Botão Anterior -->
+                <svg id="btn-anterior" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                    class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+                <!-- Botão Próximo -->
+                <svg id="btn-proximo" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="banner">
-        <img src="./img/flor roxa.png" class="flor">
-        
-        <h1 style="color: #9486C5;">Você não está sozinha! </h1>
+            <img src="./img/flor roxa.png" class="flor">
 
-        <img src="./img/mulheres-hug.png" class="hug">
+            <h1 style="color: #9486C5;">Você não está sozinha! </h1>
+
+            <img src="./img/mulheres-hug.png" class="hug">
         </div>
         <img src="./img/cta-180.png" class="cta">
     </footer>
