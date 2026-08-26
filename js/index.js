@@ -171,3 +171,16 @@ const videoCard6 = document.getElementById('violencia-domestica');
 videoCard6.addEventListener('click', function () {
     window.open('https://www.youtube.com/watch?v=9p9D1wY1yAU', '_blank');
 });
+
+//RELATÓRIO
+const toReport = document.getElementById('card-report');
+
+toReport.addEventListener('click', function () {
+    window.open('../agosto-lilas/report/report.html', '_blank');
+});
+
+const toHome = document.getElementById('to-home');
+
+toHome.addEventListener('click', function () {
+    window.open('https://agosto-lilas-ten.vercel.app/', '_blank');
+});

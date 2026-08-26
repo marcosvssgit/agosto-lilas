@@ -513,6 +513,14 @@ p {
     .banner h1 {
         font-size: 44px;
     }
+
+    .report {
+        font-family: 'MeriendaTitle', sans-serif;
+        font-size: 36px;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 20px;
+    }
 }
 
 @media(max-width: 1134px) {

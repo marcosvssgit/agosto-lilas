@@ -1,0 +1,19 @@
+.img-relat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.graphics {
+    width: 600px;
+    height: 260px;
+}
+
+.to-home {
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
