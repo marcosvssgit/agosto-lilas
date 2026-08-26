@@ -356,6 +356,23 @@ p {
     padding: 20px;
 }
 
+#card-report {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100%;            
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.report {
+    font-family: 'Lexend', sans-serif;
+    font-size: 34px;
+    color: #FFFFFF;
+    text-align: center;      
+    line-height: 1.4;        
+}
+
 .card-link {
     width: 600px;
     height: 300px;
@@ -514,13 +531,6 @@ p {
         font-size: 44px;
     }
 
-    .report {
-        font-family: 'MeriendaTitle', sans-serif;
-        font-size: 36px;
-        color: #FFFFFF;
-        text-align: center;
-        padding: 20px;
-    }
 }
 
 @media(max-width: 1134px) {

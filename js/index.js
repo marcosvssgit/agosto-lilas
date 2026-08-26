@@ -176,11 +176,5 @@ videoCard6.addEventListener('click', function () {
 const toReport = document.getElementById('card-report');
 
 toReport.addEventListener('click', function () {
-    window.open('../agosto-lilas/report/report.html', '_blank');
-});
-
-const toHome = document.getElementById('to-home');
-
-toHome.addEventListener('click', function () {
-    window.open('https://agosto-lilas-ten.vercel.app/', '_blank');
+    window.open('./report/report.html', '_blank');
 });

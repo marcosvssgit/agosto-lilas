@@ -1,3 +1,11 @@
+.report-h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
 .img-relat {
     display: flex;
     align-items: center;
@@ -8,12 +16,17 @@
 .graphics {
     width: 600px;
     height: 260px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
-.to-home {
-    cursor: pointer;
-    text-align: center;
+.graphics:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease-in-out;
 }
 
-
-
+.img-relat h2 {
+    font-size: 40px;
+}
