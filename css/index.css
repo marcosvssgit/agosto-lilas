@@ -64,7 +64,8 @@ body {
     z-index: 1;
 }
 
-.banner h1 {
+.msn {
+    color: rgb(148, 76, 187);
     position: absolute;
     left: 1.5%;
     top: 50%;
