@@ -1,611 +1,855 @@
 @font-face {
-    font-family: 'MeriendaTitle';
-    src: url('../fonts/Merienda-VariableFont.ttf') format('truetype');
-    font-weight: normal;
-    font-size: normal;
+  font-family: "MeriendaTitle";
+  src: url("../fonts/Merienda-VariableFont.ttf") format("truetype");
+  font-weight: normal;
+  font-size: normal;
 }
 
 @font-face {
-    font-family: 'Lexend';
-    src: url('../fonts/Lexend-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Lexend";
+  src: url("../fonts/Lexend-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 html {
-    background-color: #b292b9;
-    zoom: 95%;
+  background-color: #b292b9;
+  zoom: 95%;
 }
 
 body {
-    background-color: #b292b9;
-    padding: 40px 20px;
-    margin: 0;
+  background-color: #b292b9;
+  padding: 40px 20px;
+  margin: 0;
 }
 
 .dica-mobile {
-    display: none;
+  display: none;
 }
 
 .conteiner-pagina {
-    max-width: 1600px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
-    min-height: 100vh;
-    border-radius: 30px;
-    overflow: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  min-height: 100vh;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .gradient {
-    background: linear-gradient(to bottom, #C084FC, #FFFFFF);
+  background: linear-gradient(to bottom, #c084fc, #ffffff);
 }
 
 .header,
 .cta {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .banner {
-    position: relative;
-    height: 700px;
-    overflow: hidden;
+  position: relative;
+  height: 700px;
+  overflow: hidden;
 }
 
 .flor {
-    position: absolute;
-    left: -55px;
-    top: 215px;
-    width: 38%;
-    opacity: 0.3;
-    transform: scaleX(-1);
-    z-index: 1;
+  position: absolute;
+  left: -55px;
+  top: 215px;
+  width: 38%;
+  opacity: 0.3;
+  transform: scaleX(-1);
+  z-index: 1;
 }
 
 .banner h1 {
-    position: absolute;
-    left: 1.5%;
-    top: 50%;
-    width: 70%;
-    margin: 0;
-    padding: 0;
-    font-family: 'MeriendaTitle', sans-serif;
-    font-size: 75px;
-    font-style: italic;
-    z-index: 3;
+  position: absolute;
+  left: 1.5%;
+  top: 50%;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  font-family: "MeriendaTitle", sans-serif;
+  font-size: 75px;
+  font-style: italic;
+  z-index: 3;
 }
 
 .hug {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: 700px;
-    object-fit: contain;
-    z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 700px;
+  object-fit: contain;
+  z-index: 2;
 }
 
 h1,
 h2,
 h3 {
-    color: rgb(148, 76, 187);
-    font-family: 'Lexend', sans-serif;
-    font-size: 44px;
-    margin-left: 20px;
-    padding: 10px;
+  color: rgb(148, 76, 187);
+  font-family: "Lexend", sans-serif;
+  font-size: 44px;
+  margin-left: 20px;
+  padding: 10px;
 }
 
 hr {
-    margin-top: 30px;
-    margin-bottom: 0px;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 #fisica {
-    background-color: rgb(234, 196, 255);
+  background-color: rgb(234, 196, 255);
 }
 
 #psicologica {
-    background-color: rgb(227, 174, 255);
+  background-color: rgb(227, 174, 255);
 }
 
 #sexual {
-    background-color: rgb(222, 160, 255);
+  background-color: rgb(222, 160, 255);
 }
 
 #patrimonial {
-    background-color: rgb(215, 141, 255);
+  background-color: rgb(215, 141, 255);
 }
 
 #moral {
-    background-color: rgb(205, 113, 255);
+  background-color: rgb(205, 113, 255);
 }
 
 #vicaria {
-    background-color: rgb(199, 100, 252);
+  background-color: rgb(199, 100, 252);
 }
 
 p {
-    font-family: 'Lexend', sans-serif;
-    font-size: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+  font-family: "Lexend", sans-serif;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .icone-check {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .feminicidio {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feminicidio img {
-    width: 60%;
-    padding: 10px;
-    margin-top: 20px;
+  width: 70%;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .col-esquerda h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .painel-conteudos h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .lista-acoes li {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 16px;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  list-style: none;
 }
 
 .acoes {
-    font-family: 'Lexend', sans-serif;
-    font-size: 28px;
+  font-family: "Lexend", sans-serif;
+  font-size: 28px;
 }
 
 .subtitulo {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .violencias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    padding: 0 24px;
-    box-sizing: border-box;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 .violencias .toknow {
-    color: #202020;
-    font-weight: bolder;
-    display: block;
-    font-size: 14px;
-    text-align: center;
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    margin-top: auto;
+  color: #202020;
+  font-weight: bolder;
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin-top: auto;
 }
 
 .card {
-    width: 100%;
-    max-width: 100%;
-    height: 350px;
-    perspective: 1000px;
-    cursor: pointer;
-    transition: transform 0.4s ease;
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
 }
 
 .card:hover {
-    transform: scale(1.02);
-    transition: transform 0.3s ease-in-out;
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
 }
 
 .card.flipped .card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .card-front,
 .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backface-visibility: hidden;
 }
 
 .card-front {
-    padding: 14px 20px;
-    box-sizing: border-box;
-    font-family: 'Lexend', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100%;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .card-front h2 {
-    font-family: 'Lexend', sans-serif;
-    color: #000000;
-    font-size: 26px;
-    text-align: center;
-    padding: 5px;
-    margin: 0;
+  font-family: "Lexend", sans-serif;
+  color: #000000;
+  font-size: 26px;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
 }
 
 .card-front span {
-    font-size: 20px;
-    display: flex;
-    flex: 1;
-    align-items: center;
-    padding: 2px 0;
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 2px 0;
 }
 
 .card-back {
-    transform: rotateY(180deg);
-    overflow: hidden;
+  transform: rotateY(180deg);
+  overflow: hidden;
 }
 
 .card-back img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
 .card-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(100%);
-    transition:
-        transform 0.4s ease-in-out,
-        opacity 0.4s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition:
+    transform 0.4s ease-in-out,
+    opacity 0.4s ease-in-out;
 }
 
 .card-content.ativo {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .card-content.saindo-esquerda {
-    opacity: 0;
-    visibility: visible;
-    transform: translateX(-100%);
+  opacity: 0;
+  visibility: visible;
+  transform: translateX(-100%);
 }
 
 .card-content.saindo-direita {
-    opacity: 0;
-    visibility: visible;
-    transform: translateX(100%);
+  opacity: 0;
+  visibility: visible;
+  transform: translateX(100%);
 }
 
-.icone-check {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 24px;
-    min-height: 24px;
-    background-color: #7b52ab;
-    color: #ffffff;
-    border-radius: 50%;
-    font-size: 14px;
-    font-weight: bold;
+.historiaLei,
+.diagSocial {
+  background-color: rgb(234, 196, 255);
+  width: auto;
+  max-width: 1360px;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.historiaLei {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  column-gap: 26px;
+  row-gap: 18px;
+  align-items: start;
+}
+
+.historiaLei img,
+.diagSocial img {
+  float: left;
+  width: 250px;
+  height: 220px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.historiaLei img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  margin: 0;
+  float: none;
+}
+
+.historia-texto {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.historia-texto p,
+.diagText {
+  font-family: "Lexend", sans-serif;
+  color: #000000;
+  font-size: 28px;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+.historiaLei a,
+.cta-report {
+  font-family: "Lexend", sans-serif;
+  color: rgb(148, 76, 187);
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: underline;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.historiaLei a {
+  grid-column: 1 / -1;
+  margin-top: 0;
+}
+
+.diagSocial .cta-report {
+  clear: both;
+}
+
+.cta-report:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  text-decoration: underline; /* Opcional: mostra o sublinhado ao passar o mouse */
+}
+
+.diagSocial {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.diagSocial:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.historiaLei,
+.diagSocial {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 15px;
+  gap: 15px;
+}
+
+.historiaLei img,
+.diagSocial img {
+  width: 100%;
+  max-width: 280px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.historia-texto,
+.diagText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.historiaLei a,
+.cta-report {
+  text-align: center;
+  margin: 10px auto 0 auto;
+  display: block;
 }
 
 .container-principal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.grid-content,
+.card-link,
+.card-video {
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.icone-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  min-height: 24px;
+  background-color: #7b52ab;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.container-principal > .contents {
+  flex: 1 1 55%;
+  min-width: 0;
+}
+
+.container-principal > .painel-conteudos {
+  flex: 1 1 45%;
+  min-width: 0;
+}
+
+.container-principal iframe,
+.container-principal button,
+.container-principal a,
+.container-principal #btn-anterior,
+.container-principal #btn-proximo {
+  pointer-events: auto;
 }
 
 .grid-content {
-    position: relative;
-    width: 600px;
-    height: 300px;
-    border-radius: 10px;
-    cursor: pointer;
-    overflow: hidden;
-    background-color: rgb(199, 100, 252);
-    transition: transform 0.4s ease;
+  position: relative;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: rgb(199, 100, 252);
+  transition: transform 0.4s ease;
 }
 
 .grid-content:hover {
-    background-color: rgb(201, 115, 247);
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+  background-color: rgb(201, 115, 247);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .card-text {
-    font-family: 'MeriendaTitle', sans-serif;
-    font-size: 36px;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 20px;
+  font-family: "MeriendaTitle", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
 }
 
 #card-report {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100%;            
-    padding: 20px 30px;
-    box-sizing: border-box;
+  display: block;
+  height: auto;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+#card-report > img {
+  float: left !important;
+  width: 250px !important;
+  max-width: none !important;
+  height: 220px !important;
+  margin: 0 24px 12px 0 !important;
+}
+
+#card-report .diagText {
+  display: block;
+  width: auto;
+  text-align: left !important;
+}
+
+#card-report .diagText p {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 .report {
-    font-family: 'Lexend', sans-serif;
-    font-size: 34px;
-    color: #FFFFFF;
-    text-align: center;      
-    line-height: 1.4;        
+  font-family: "Lexend", sans-serif;
+  font-size: 34px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .card-link {
-    width: 600px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-link img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .card-video {
-    width: 600px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-video img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+.card-video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
 }
 
 .carrossel-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    width: 100%;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .bi-arrow-left-circle-fill,
 .bi-arrow-right-circle-fill {
-    color: #7b52ab;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-    min-height: 48px;
+  color: #7b52ab;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .bi-arrow-left-circle-fill:hover,
 .bi-arrow-right-circle-fill:hover {
-    transform: scale(1.15);
-    transition: transform 0.3s ease-in-out;
+  transform: scale(1.15);
+  transition: transform 0.3s ease-in-out;
 }
-
 
 /* Responsividade */
-@media(max-width: 1294px) {
-    .container-principal {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 1294px) {
+  .container-principal {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .dica-mobile {
-        display: block;
-        text-align: center;
-        font-size: 13px;
-        color: #666;
-        margin-top: 10px;
-    }
+  .dica-mobile {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+  }
 
-    .col-esquerda {
-        width: 100%;
-    }
+  .col-esquerda {
+    width: 100%;
+  }
 
-    .card {
-        min-height: 370px;
-    }
+  .card {
+    min-height: 370px;
+  }
 
-    .col-esquerda p {
-        margin-bottom: 10px;
-    }
+  .col-esquerda p {
+    margin-bottom: 10px;
+  }
 
-    .icone-check {
-        margin-left: 0px;
-        width: 24px;
-        height: 24px;
-    }
+  .icone-check {
+    margin-left: 0px;
+    width: 24px;
+    height: 24px;
+  }
 
-    .lista-acoes {
-        margin-left: 10px;
-        padding: 0px;
-        width: 100%;
-    }
+  .feminicidio img {
+    width: 9=80%;
+  }
 
-    .lista-acoes li {
-        align-items: left;
-    }
+  .lista-acoes {
+    margin-left: 10px;
+    padding: 0px;
+    width: 100%;
+  }
 
-    .lista-acoes span {
-        font-size: 24px;
-    }
+  .lista-acoes li {
+    align-items: left;
+  }
 
-    .grid-content,
-    .card-link,
-    .card-video {
-        width: 100%;
-        max-width: 390px;
-        height: 220px;
-        margin: 10px auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .lista-acoes span {
+    font-size: 24px;
+  }
 
-    .grid-content img,
-    .card-link img,
-    .card-video img {
-        width: 100%;
-        height: auto;
-    }
+  .grid-content,
+  .card-link,
+  .card-video {
+    width: 100%;
+    max-width: 390px;
+    height: 220px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .painel-conteudos {
-        align-items: center;
-        margin-bottom: 20px;
-    }
+  .painel-conteudos {
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
+  .card-text span {
+    font-size: 20px;
+  }
 
-    .card-text span {
-        font-size: 20px;
-    }
+  .cta {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
-    .cta {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+  .banner {
+    height: 220px;
+    margin-top: 10px;
+  }
 
-    .banner {
-        height: 220px;
-        margin-top: 10px;
-    }
+  .flor {
+    left: -10px;
+    top: 100px;
+  }
 
-    .flor {
-        left: -10px;
-        top: 100px;
-    }
+  .hug {
+    height: 100%;
+  }
 
-    .hug {
-        height: 100%;
-    }
-
-    .banner h1 {
-        font-size: 44px;
-    }
-
+  .banner h1 {
+    font-size: 44px;
+  }
 }
 
-@media(max-width: 1134px) {
+@media (max-width: 1134px) {
+  #btn-anterior,
+  #btn-proximo,
+  .bi-arrow-left-circle-fill,
+  .bi-arrow-right-circle-fill {
+    display: none !important;
+  }
 
-    #btn-anterior,
-    #btn-proximo,
-    .bi-arrow-left-circle-fill,
-    .bi-arrow-right-circle-fill {
-        display: none !important;
-    }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        overflow-x: hidden;
-    }
+  h1,
+  h2,
+  h3 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 10px;
+    width: auto;
+  }
 
-    h1,
-    h2,
-    h3 {
-        font-size: 32px;
-        text-align: center;
-        margin: 0 10px;
-        width: auto;
-    }
+  p {
+    font-size: 28px;
+  }
 
-    p {
-        font-size: 28px;
-    }
+  .card {
+    width: 100%;
+    max-width: 380px;
+    height: 320px;
+    margin: 0 auto;
+  }
 
-    .card {
-        width: 100%;
-        max-width: 380px;
-        height: 320px;
-        margin: 0 auto;
-    }
-
-    .violencias {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 960px;
-    }
-
+  .violencias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 960px;
+  }
 }
 
-@media(max-width: 784px) {
-    .violencias {
-        grid-template-columns: 1fr;
+@media (max-width: 784px) {
+  .container-principal {
+    grid-template-columns: 1fr;
+  }
 
+  .violencias {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    height: 360px;
+  }
+
+  .lista-acoes span {
+    font-size: 17px;
+  }
+
+  .card-text span {
+    font-size: 18px;
+  }
+
+  .hug {
+    height: 200px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .carrossel-wrapper {
+    gap: 12px;
+  }
+
+  #btn-anterior,
+  #btn-proximo {
+    display: block !important;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    flex: 0 0 48px;
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+
+  .carrossel-wrapper .grid-content {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  @media (max-width: 600px) {
+    .historiaLei {
+      grid-template-columns: minmax(0, 1fr);
     }
 
-    .card {
-        width: 100%;
-        max-width: 100%;
-        height: 360px;
+    .historiaLei img,
+    .historia-texto {
+      grid-column: 1;
     }
 
-    .lista-acoes span {
-        font-size: 17px;
+    .historiaLei img {
+      grid-row: auto;
+      width: min(100%, 320px);
     }
 
-    .card-text span {
-        font-size: 18px;
+    .historia-texto {
+      grid-row: auto;
     }
 
-    .hug {
-        height: 200px;
+    #card-report.diagSocial > img {
+      float: none;
+      width: min(100%, 280px);
+      max-width: 280px;
+      height: 200px;
+      margin: 0 auto 12px;
     }
 
-    .banner h1 {
-        font-size: 30px;
-
+    #card-report .diagText {
+      display: block;
+      width: 100%;
+      text-align: left;
     }
+
+    #card-report .diagText p {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.6;
+      text-align: left;
+    }
+  }
 }
